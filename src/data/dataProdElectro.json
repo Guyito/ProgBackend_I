@@ -1,402 +1,408 @@
 [
-     {
-          "id": 1,
-          "stock": 25,
-          "nombre": "Lavarropas",
-          "marca": "Samsung",
-          "precio": 30000,
-          "categoria": "Lavandería"
-     },
-     {
-          "id": 2,
-          "stock": 15,
-          "nombre": "Heladera",
-          "marca": "LG",
-          "precio": 45000,
-          "categoria": "Cocina"
-     },
-     {
-          "id": 3,
-          "stock": 30,
-          "nombre": "Microondas",
-          "marca": "Whirlpool",
-          "precio": 15000,
-          "categoria": "Cocina"
-     },
-     {
-          "id": 4,
-          "stock": 10,
-          "nombre": "Televisor",
-          "marca": "Sony",
-          "precio": 60000,
-          "categoria": "Living"
-     },
-     {
-          "id": 5,
-          "stock": 20,
-          "nombre": "Aire Acondicionado",
-          "marca": "Daikin",
-          "precio": 50000,
-          "categoria": "Living"
-     },
-     {
-          "id": 6,
-          "stock": 5,
-          "nombre": "Secador de Pelo",
-          "marca": "Philips",
-          "precio": 5000,
-          "categoria": "Baño"
-     },
-     {
-          "id": 7,
-          "stock": 40,
-          "nombre": "Cafetera",
-          "marca": "Nespresso",
-          "precio": 12000,
-          "categoria": "Cocina"
-     },
-     {
-          "id": 8,
-          "stock": 12,
-          "nombre": "Lavavajillas",
-          "marca": "Bosch",
-          "precio": 35000,
-          "categoria": "Cocina"
-     },
-     {
-          "id": 9,
-          "stock": 8,
-          "nombre": "Batidora",
-          "marca": "Oster",
-          "precio": 7000,
-          "categoria": "Cocina"
-     },
-     {
-          "id": 10,
-          "stock": 22,
-          "nombre": "Plancha",
-          "marca": "Rowenta",
-          "precio": 4500,
-          "categoria": "Lavandería"
-     },
-     {
-          "id": 11,
-          "stock": 18,
-          "nombre": "Horno Eléctrico",
-          "marca": "Electrolux",
-          "precio": 25000,
-          "categoria": "Cocina"
-     },
-     {
-          "id": 12,
-          "stock": 14,
-          "nombre": "Ventilador de Pie",
-          "marca": "Liliana",
-          "precio": 8000,
-          "categoria": "Living"
-     },
-     {
-          "id": 13,
-          "stock": 16,
-          "nombre": "Tostadora",
-          "marca": "Philco",
-          "precio": 3000,
-          "categoria": "Cocina"
-     },
-     {
-          "id": 14,
-          "stock": 28,
-          "nombre": "Licuadora",
-          "marca": "ATMA",
-          "precio": 5500,
-          "categoria": "Cocina"
-     },
-     {
-          "id": 15,
-          "stock": 20,
-          "nombre": "Radiador Eléctrico",
-          "marca": "Peabody",
-          "precio": 9000,
-          "categoria": "Living"
-     },
-     {
-          "id": 16,
-          "stock": 6,
-          "nombre": "Aspiradora",
-          "marca": "Dyson",
-          "precio": 40000,
-          "categoria": "Living"
-     },
-     {
-          "id": 17,
-          "stock": 11,
-          "nombre": "Estufa a Gas",
-          "marca": "Longvie",
-          "precio": 20000,
-          "categoria": "Living"
-     },
-     {
-          "id": 18,
-          "stock": 13,
-          "nombre": "Extractor de Aire",
-          "marca": "TST",
-          "precio": 7000,
-          "categoria": "Baño"
-     },
-     {
-          "id": 19,
-          "stock": 9,
-          "nombre": "Purificador de Aire",
-          "marca": "Winix",
-          "precio": 15000,
-          "categoria": "Living"
-     },
-     {
-          "id": 20,
-          "stock": 7,
-          "nombre": "Calefactor Eléctrico",
-          "marca": "Liliana",
-          "precio": 10000,
-          "categoria": "Living"
-     },
-     {
-          "id": 21,
-          "stock": 25,
-          "nombre": "Freidora de Aire",
-          "marca": "Phillips",
-          "precio": 22000,
-          "categoria": "Cocina"
-     },
-     {
-          "id": 22,
-          "stock": 30,
-          "nombre": "Humidificador",
-          "marca": "Vick",
-          "precio": 8000,
-          "categoria": "Baño"
-     },
-     {
-          "id": 23,
-          "stock": 10,
-          "nombre": "Cocina a Gas",
-          "marca": "Patrick",
-          "precio": 32000,
-          "categoria": "Cocina"
-     },
-     {
-          "id": 24,
-          "stock": 50,
-          "nombre": "Deshumidificador",
-          "marca": "Midea",
-          "precio": 17000,
-          "categoria": "Living"
-     },
-     {
-          "id": 25,
-          "stock": 14,
-          "nombre": "Lámpara de Pie",
-          "marca": "Philips",
-          "precio": 6000,
-          "categoria": "Living"
-     },
-     {
-          "id": 26,
-          "stock": 18,
-          "nombre": "Reloj Despertador",
-          "marca": "Sony",
-          "precio": 3000,
-          "categoria": "Dormitorio"
-     },
-     {
-          "id": 27,
-          "stock": 17,
-          "nombre": "Calefón",
-          "marca": "Rheem",
-          "precio": 25000,
-          "categoria": "Baño"
-     },
-     {
-          "id": 28,
-          "stock": 6,
-          "nombre": "Horno a Microondas",
-          "marca": "Samsung",
-          "precio": 15000,
-          "categoria": "Cocina"
-     },
-     {
-          "id": 29,
-          "stock": 8,
-          "nombre": "Maquina de Coser",
-          "marca": "Singer",
-          "precio": 12000,
-          "categoria": "Lavandería"
-     },
-     {
-          "id": 30,
-          "stock": 5,
-          "nombre": "Ventilador de Techo",
-          "marca": "KDK",
-          "precio": 17000,
-          "categoria": "Living"
-     },
-     {
-          "id": 31,
-          "stock": 9,
-          "nombre": "Plancha a Vapor",
-          "marca": "Oster",
-          "precio": 6000,
-          "categoria": "Lavandería"
-     },
-     {
-          "id": 32,
-          "stock": 3,
-          "nombre": "Molinillo de Café",
-          "marca": "De'Longhi",
-          "precio": 5000,
-          "categoria": "Cocina"
-     },
-     {
-          "id": 33,
-          "stock": 2,
-          "nombre": "Caloventor",
-          "marca": "Peabody",
-          "precio": 8000,
-          "categoria": "Living"
-     },
-     {
-          "id": 34,
-          "stock": 15,
-          "nombre": "Parrilla Eléctrica",
-          "marca": "George Foreman",
-          "precio": 10000,
-          "categoria": "Cocina"
-     },
-     {
-          "id": 35,
-          "stock": 12,
-          "nombre": "Hidromasaje",
-          "marca": "Aquabella",
-          "precio": 80000,
-          "categoria": "Baño"
-     },
-     {
-          "id": 36,
-          "stock": 9,
-          "nombre": "Radiador de Aceite",
-          "marca": "Peabody",
-          "precio": 15000,
-          "categoria": "Living"
-     },
-     {
-          "id": 37,
-          "stock": 4,
-          "nombre": "Frazada Eléctrica",
-          "marca": "Milan",
-          "precio": 7000,
-          "categoria": "Dormitorio"
-     },
-     {
-          "id": 38,
-          "stock": 10,
-          "nombre": "Termotanque Eléctrico",
-          "marca": "Ariston",
-          "precio": 30000,
-          "categoria": "Baño"
-     },
-     {
-          "id": 39,
-          "stock": 7,
-          "nombre": "Lavadora de Alta Presión",
-          "marca": "Kärcher",
-          "precio": 20000,
-          "categoria": "Lavandería"
-     },
-     {
-          "id": 40,
-          "stock": 20,
-          "nombre": "Cortadora de Césped",
-          "marca": "Black & Decker",
-          "precio": 22000,
-          "categoria": "Jardín"
-     },
-     {
-          "id": 41,
-          "stock": 14,
-          "nombre": "Purificador de Agua",
-          "marca": "Brita",
-          "precio": 5000,
-          "categoria": "Cocina"
-     },
-     {
-          "id": 42,
-          "stock": 10,
-          "nombre": "Tendedero Eléctrico",
-          "marca": "Leifheit",
-          "precio": 9000,
-          "categoria": "Lavandería"
-     },
-     {
-          "id": 43,
-          "stock": 25,
-          "nombre": "Plancha para el Pelo",
-          "marca": "Gama",
-          "precio": 7000,
-          "categoria": "Baño"
-     },
-     {
-          "id": 44,
-          "stock": 8,
-          "nombre": "Máquina de Hielo",
-          "marca": "Frigidaire",
-          "precio": 25000,
-          "categoria": "Cocina"
-     },
-     {
-          "id": 45,
-          "stock": 5,
-          "nombre": "Extractor de Jugo",
-          "marca": "Philips",
-          "precio": 15000,
-          "categoria": "Cocina"
-     },
-     {
-          "id": 46,
-          "stock": 10,
-          "nombre": "Refrigerador",
-          "marca": "Whirlpool",
-          "precio": 60000,
-          "categoria": "Cocina"
-     },
-     {
-          "id": 47,
-          "stock": 18,
-          "nombre": "Licuadora de Mano",
-          "marca": "Braun",
-          "precio": 5000,
-          "categoria": "Cocina"
-     },
-     {
-          "id": 48,
-          "stock": 7,
-          "nombre": "Ventilador de Escritorio",
-          "marca": "Liliana",
-          "precio": 4000,
-          "categoria": "Living"
-     },
-     {
-          "id": 49,
-          "stock": 3,
-          "nombre": "Lavavajillas Compacto",
-          "marca": "Beko",
-          "precio": 30000,
-          "categoria": "Cocina"
-     },
-     {
-          "id": 50,
-          "stock": 15,
-          "nombre": "Máquina de Coser Electrónica",
-          "marca": "Brother",
-          "precio": 35000,
-          "categoria": "Lavandería"
-     }
+  {
+    "id": 1,
+    "stock": 25,
+    "nombre": "Lavarropas",
+    "marca": "Samsung",
+    "precio": 30000,
+    "categoria": "Lavandería"
+  },
+  {
+    "id": 2,
+    "stock": 15,
+    "nombre": "Heladera",
+    "marca": "LG",
+    "precio": 45000,
+    "categoria": "Cocina"
+  },
+  {
+    "id": 3,
+    "stock": 30,
+    "nombre": "Microondas",
+    "marca": "Whirlpool",
+    "precio": 15000,
+    "categoria": "Cocina"
+  },
+  {
+    "id": 4,
+    "stock": 10,
+    "nombre": "Televisor",
+    "marca": "Sony",
+    "precio": 60000,
+    "categoria": "Living"
+  },
+  {
+    "id": 5,
+    "stock": 20,
+    "nombre": "Aire Acondicionado",
+    "marca": "Daikin",
+    "precio": 50000,
+    "categoria": "Living"
+  },
+  {
+    "id": 6,
+    "stock": 5,
+    "nombre": "Secador de Pelo",
+    "marca": "Philips",
+    "precio": 5000,
+    "categoria": "Baño"
+  },
+  {
+    "id": 7,
+    "stock": 40,
+    "nombre": "Cafetera",
+    "marca": "Nespresso",
+    "precio": 12000,
+    "categoria": "Cocina"
+  },
+  {
+    "id": 8,
+    "stock": 12,
+    "nombre": "Lavavajillas",
+    "marca": "Bosch",
+    "precio": 35000,
+    "categoria": "Cocina"
+  },
+  {
+    "id": 9,
+    "stock": 8,
+    "nombre": "Batidora",
+    "marca": "Oster",
+    "precio": 7000,
+    "categoria": "Cocina"
+  },
+  {
+    "id": 10,
+    "stock": 22,
+    "nombre": "Plancha",
+    "marca": "Rowenta",
+    "precio": 4500,
+    "categoria": "Lavandería"
+  },
+  {
+    "id": 11,
+    "stock": 18,
+    "nombre": "Horno Eléctrico",
+    "marca": "Electrolux",
+    "precio": 25000,
+    "categoria": "Cocina"
+  },
+  {
+    "id": 12,
+    "stock": 14,
+    "nombre": "Ventilador de Pie",
+    "marca": "Liliana",
+    "precio": 8000,
+    "categoria": "Living"
+  },
+  {
+    "id": 13,
+    "stock": 16,
+    "nombre": "Tostadora",
+    "marca": "Philco",
+    "precio": 3000,
+    "categoria": "Cocina"
+  },
+  {
+    "id": 14,
+    "stock": 28,
+    "nombre": "Licuadora",
+    "marca": "ATMA",
+    "precio": 5500,
+    "categoria": "Cocina"
+  },
+  {
+    "id": 15,
+    "stock": 20,
+    "nombre": "Radiador Eléctrico",
+    "marca": "Peabody",
+    "precio": 9000,
+    "categoria": "Living"
+  },
+  {
+    "id": 16,
+    "stock": 6,
+    "nombre": "Aspiradora",
+    "marca": "Dyson",
+    "precio": 40000,
+    "categoria": "Living"
+  },
+  {
+    "id": 17,
+    "stock": 11,
+    "nombre": "Estufa a Gas",
+    "marca": "Longvie",
+    "precio": 20000,
+    "categoria": "Living"
+  },
+  {
+    "id": 18,
+    "stock": 13,
+    "nombre": "Extractor de Aire",
+    "marca": "TST",
+    "precio": 7000,
+    "categoria": "Baño"
+  },
+  {
+    "id": 19,
+    "stock": 9,
+    "nombre": "Purificador de Aire",
+    "marca": "Winix",
+    "precio": 15000,
+    "categoria": "Living"
+  },
+  {
+    "id": 20,
+    "stock": 7,
+    "nombre": "Calefactor Eléctrico",
+    "marca": "Liliana",
+    "precio": 10000,
+    "categoria": "Living"
+  },
+  {
+    "id": 21,
+    "stock": 25,
+    "nombre": "Freidora de Aire",
+    "marca": "Phillips",
+    "precio": 22000,
+    "categoria": "Cocina"
+  },
+  {
+    "id": 22,
+    "stock": 30,
+    "nombre": "Humidificador",
+    "marca": "Vick",
+    "precio": 8000,
+    "categoria": "Baño"
+  },
+  {
+    "id": 23,
+    "stock": 10,
+    "nombre": "Cocina a Gas",
+    "marca": "Patrick",
+    "precio": 32000,
+    "categoria": "Cocina"
+  },
+  {
+    "id": 24,
+    "stock": 50,
+    "nombre": "Deshumidificador",
+    "marca": "Midea",
+    "precio": 17000,
+    "categoria": "Living"
+  },
+  {
+    "id": 25,
+    "stock": 14,
+    "nombre": "Lámpara de Pie",
+    "marca": "Philips",
+    "precio": 6000,
+    "categoria": "Living"
+  },
+  {
+    "id": 26,
+    "stock": 18,
+    "nombre": "Reloj Despertador",
+    "marca": "Sony",
+    "precio": 3000,
+    "categoria": "Dormitorio"
+  },
+  {
+    "id": 27,
+    "stock": 17,
+    "nombre": "Calefón",
+    "marca": "Rheem",
+    "precio": 25000,
+    "categoria": "Baño"
+  },
+  {
+    "id": 28,
+    "stock": 6,
+    "nombre": "Horno a Microondas",
+    "marca": "Samsung",
+    "precio": 15000,
+    "categoria": "Cocina"
+  },
+  {
+    "id": 29,
+    "stock": 8,
+    "nombre": "Maquina de Coser",
+    "marca": "Singer",
+    "precio": 12000,
+    "categoria": "Lavandería"
+  },
+  {
+    "id": 30,
+    "stock": 5,
+    "nombre": "Ventilador de Techo",
+    "marca": "KDK",
+    "precio": 17000,
+    "categoria": "Living"
+  },
+  {
+    "id": 31,
+    "stock": 9,
+    "nombre": "Plancha a Vapor",
+    "marca": "Oster",
+    "precio": 6000,
+    "categoria": "Lavandería"
+  },
+  {
+    "id": 32,
+    "stock": 3,
+    "nombre": "Molinillo de Café",
+    "marca": "De'Longhi",
+    "precio": 5000,
+    "categoria": "Cocina"
+  },
+  {
+    "id": 33,
+    "stock": 2,
+    "nombre": "Caloventor",
+    "marca": "Peabody",
+    "precio": 8000,
+    "categoria": "Living"
+  },
+  {
+    "id": 34,
+    "stock": 15,
+    "nombre": "Parrilla Eléctrica",
+    "marca": "George Foreman",
+    "precio": 10000,
+    "categoria": "Cocina"
+  },
+  {
+    "id": 35,
+    "stock": 12,
+    "nombre": "Hidromasaje",
+    "marca": "Aquabella",
+    "precio": 80000,
+    "categoria": "Baño"
+  },
+  {
+    "id": 36,
+    "stock": 9,
+    "nombre": "Radiador de Aceite",
+    "marca": "Peabody",
+    "precio": 15000,
+    "categoria": "Living"
+  },
+  {
+    "id": 37,
+    "stock": 4,
+    "nombre": "Frazada Eléctrica",
+    "marca": "Milan",
+    "precio": 7000,
+    "categoria": "Dormitorio"
+  },
+  {
+    "id": 38,
+    "stock": 10,
+    "nombre": "Termotanque Eléctrico",
+    "marca": "Ariston",
+    "precio": 30000,
+    "categoria": "Baño"
+  },
+  {
+    "id": 39,
+    "stock": 7,
+    "nombre": "Lavadora de Alta Presión",
+    "marca": "Kärcher",
+    "precio": 20000,
+    "categoria": "Lavandería"
+  },
+  {
+    "id": 40,
+    "stock": 20,
+    "nombre": "Cortadora de Césped",
+    "marca": "Black & Decker",
+    "precio": 22000,
+    "categoria": "Jardín"
+  },
+  {
+    "id": 41,
+    "stock": 14,
+    "nombre": "Purificador de Agua",
+    "marca": "Brita",
+    "precio": 5000,
+    "categoria": "Cocina"
+  },
+  {
+    "id": 42,
+    "stock": 10,
+    "nombre": "Tendedero Eléctrico",
+    "marca": "Leifheit",
+    "precio": 9000,
+    "categoria": "Lavandería"
+  },
+  {
+    "id": 43,
+    "stock": 25,
+    "nombre": "Plancha para el Pelo",
+    "marca": "Gama",
+    "precio": 7000,
+    "categoria": "Baño"
+  },
+  {
+    "id": 44,
+    "stock": 8,
+    "nombre": "Máquina de Hielo",
+    "marca": "Frigidaire",
+    "precio": 25000,
+    "categoria": "Cocina"
+  },
+  {
+    "id": 45,
+    "stock": 5,
+    "nombre": "Extractor de Jugo",
+    "marca": "Philips",
+    "precio": 15000,
+    "categoria": "Cocina"
+  },
+  {
+    "id": 46,
+    "stock": 10,
+    "nombre": "Refrigerador",
+    "marca": "Whirlpool",
+    "precio": 60000,
+    "categoria": "Cocina"
+  },
+  {
+    "id": 47,
+    "stock": 18,
+    "nombre": "Licuadora de Mano",
+    "marca": "Braun",
+    "precio": 5000,
+    "categoria": "Cocina"
+  },
+  {
+    "id": 48,
+    "stock": 7,
+    "nombre": "Ventilador de Escritorio",
+    "marca": "Liliana",
+    "precio": 4000,
+    "categoria": "Living"
+  },
+  {
+    "id": 49,
+    "stock": 3,
+    "nombre": "Lavavajillas Compacto",
+    "marca": "Beko",
+    "precio": 30000,
+    "categoria": "Cocina"
+  },
+  {
+    "id": 50,
+    "stock": 15,
+    "nombre": "Máquina de Coser Electrónica",
+    "marca": "Brother",
+    "precio": 35000,
+    "categoria": "Lavandería"
+  },
+  {
+    "id": "222",
+    "nombre": "Gus",
+    "precio": "30",
+    "stock": "10"
+  }
 ]

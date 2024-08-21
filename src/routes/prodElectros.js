@@ -37,15 +37,15 @@ router.get('/:id', async (req, res) => {
 
 router.post('/', async (req, res)=>{
 
-    let { nombre, codigo, precio, stock } = req.body
-    if (!nombre || !codigo || !precio || !stock) {
+    let { nombre, id, precio, stock } = req.body
+    if (!nombre || !id || !precio || !stock) {
         res.setHeader('Content-Type', 'application/json')
-        return res.status(400).json({ error: 'Complete Nombre, Codigo, Precio, y Stock'})
+        return res.status(400).json({ error: 'Complete sarasa'})
     }
 
     try{
         
-        let newProduct = await electroManager.create({ nombre, codigo, precio, stock })
+        let newProduct = await electroManager.create({ nombre, id, precio, stock })
 
         res.setHeader('Content-Type', 'application/json')
         res.status(201).json({newProduct})
@@ -54,7 +54,7 @@ router.post('/', async (req, res)=>{
 
         console.log(error)
         res.setHeader('Content-Type', 'application/json')
-        res.status(500).json({error: `Error en el server`, detalle: `${error.message}`})
+        res.status(500).json({Error: `Error en el server`, detalle: `${error.message}`})
     }
 
 })
