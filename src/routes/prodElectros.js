@@ -58,3 +58,49 @@ router.post('/', async (req, res)=>{
     }
 
 })
+
+
+// Actualizando un producto desde POST
+
+router.put('/:id', async (req, res) => {
+
+    try{
+        const productId = req.params.id; 
+        const updateID = req.body
+
+        if(Object.keys(updateID).length===0){
+            return res.status(400).json({error: 'no se puede actualizar'})
+        }
+
+        const productUp = await electroManager.updateProduct(productId, updateID);
+
+        if (!productUp){
+            return res.status(404).json({error: 'falla de id_upgrade'})
+        }
+        res.json(productUp)
+    }
+
+    catch (error){
+        console.error('error de ID_upgrade', error.message)
+        res.status(500).json({error: 'de ID_upgrade'})
+    }
+
+})
+
+// Eliminar un producto desde DELETE
+
+router.delete('/:id', async (req, res) => {
+    try{
+        const productId = req.params.id
+        const deleteProd = await electroManager.deleteProduct(productId)
+
+        if(deleteProd ===0){
+            return res.status(404).json({error: 'prod no encontrado'})
+        }
+        res.status(204).end()
+    }
+    catch(error){
+        console.error(error,'error eliminando el prod')
+        res.status(500).json({error: 'error eliminando el producto'})
+    }
+})

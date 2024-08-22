@@ -398,11 +398,5 @@
     "marca": "Brother",
     "precio": 35000,
     "categoria": "Lavandería"
-  },
-  {
-    "id": "222",
-    "nombre": "Gus",
-    "precio": "30",
-    "stock": "10"
   }
 ]

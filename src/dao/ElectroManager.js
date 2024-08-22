@@ -43,6 +43,48 @@ static async create (prodElectros={}){  // Creando un nuevo producto
     return nuevoElectroProduct
 }
 
+
+
+// Upgrade de ID
+
+static async updateProduct (id, updateProduct = {}){
+    try {
+        const product = await this.get()
+        const index = product.findIndex (p=>p.id ===id)
+
+        if (index === -1) {
+            return null; 
+        }
+
+        product[index] = {
+            ...product[index],
+            ...updateProduct,
+            id
+        };
+
+        await fs.promises.writeFile(productsFilePath, JSON.stringify(product, null, 2));
+
+        return product[index];
+    } catch (error) {
+        console.error('error de ID_actualizacion:', error.message); 
+        throw new Error('error de ID_actualizacion');
+    }
 }
 
-// module.exports = electroManager;
+static async deleteProduct(id) {
+    const product = await this.get();
+    const index = product.findIndex(p => p.id === id);
+    if (index === -1) {
+
+        return 0;
+    }
+
+    const eliminProduct = product.filter(p => p.id !== id);
+
+    await fs.promises.writeFile(productsFilePath, JSON.stringify(eliminProduct, null, 2));
+
+    return 1;
+}
+}
+
+export default electroManager;
