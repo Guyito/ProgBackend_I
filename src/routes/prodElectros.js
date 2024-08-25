@@ -1,6 +1,6 @@
 
 import {Router} from 'express'
-import { electroManager } from '../dao/ElectroManager.js'
+import { electroManager } from '../dao/electroManager.js'
 export const router = Router()
 
 // Obtener todos los productos con un límite opcional
@@ -59,30 +59,50 @@ router.post('/', async (req, res)=>{
 
 })
 
-
 // Actualizando un producto desde POST
 
 router.put('/:id', async (req, res) => {
 
+    let {id}=req.params
+    id=Number(id)
+    if(isNaN(id)){
+        res.setHeader('Content-Type', 'application/json')
+        return res.status(400).json({error: 'id debe ser numerico'})
+    }
+
+    let aModificar=req.body
+    delete aModificar.id
+
+    if(aModificar.name){
+        let existe =prod.find(f => f.name.toLowerCase()===aModificar.name.tuLowerCase() && f.id!==id)
+        if(existe){
+            res.setHeader('Content-Type', 'application/json')
+            return res.status(400).json({error:`ya existe otro prod ${aModificar.name}`})
+        }
+    }
+
     try{
-        const productId = req.params.id; 
-        const updateID = req.body
+        const updateID = await electroManager.updateProduct(id, aModificar)
+        res.setHeader('Content-Type','application/json');
+        return res.status(200).json({updateID});
+        // const productId = req.params.id; 
+        // const updateID = req.body
 
-        if(Object.keys(updateID).length===0){
-            return res.status(400).json({error: 'no se puede actualizar'})
-        }
+        // if(Object.keys(updateID).length===0){
+        //     return res.status(400).json({error: 'no se puede actualizar'})
+        // }
 
-        const productUp = await electroManager.updateProduct(productId, updateID);
+        // const productUp = await electroManager.updateProduct(productId, updateID);
 
-        if (!productUp){
-            return res.status(404).json({error: 'falla de id_upgrade'})
-        }
-        res.json(productUp)
+        // if (!productUp){
+        //     return res.status(404).json({error: 'falla de id_upgrade'})
+        // }
+        // res.json(productUp)
     }
 
     catch (error){
         console.error('error de ID_upgrade', error.message)
-        res.status(500).json({error: 'de ID_upgrade'})
+        return res.status(500).json({error: 'de ID_upgrade'})
     }
 
 })
@@ -91,8 +111,8 @@ router.put('/:id', async (req, res) => {
 
 router.delete('/:id', async (req, res) => {
     try{
-        const productId = req.params.id
-        const deleteProd = await electroManager.deleteProduct(productId)
+        const id = Number(req.params.id)
+        const deleteProd = await electroManager.deleteProduct(id)
 
         if(deleteProd ===0){
             return res.status(404).json({error: 'prod no encontrado'})

@@ -3,7 +3,7 @@
 import express from 'express'
 import {router as prodElectrosRouter} from './routes/prodElectros.js'
 import {router as prodCartsRouter} from './routes/prodCarts.js'
-import { electroManager } from './dao/ElectroManager.js'
+import { electroManager } from './dao/electroManager.js'
 import { cartsManager } from './dao/CartsManager.js'
 
 electroManager.path = "./src/data/dataProdElectro.json"

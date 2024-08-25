@@ -1,4 +1,5 @@
 import fs from "fs"
+// const cartsFilePath = path.resolve('./src/data/dataCarts.json');
 
 export class cartsManager{
 

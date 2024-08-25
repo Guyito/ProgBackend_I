@@ -47,29 +47,50 @@ static async create (prodElectros={}){  // Creando un nuevo producto
 
 // Upgrade de ID
 
-static async updateProduct (id, updateProduct = {}){
-    try {
-        const product = await this.get()
-        const index = product.findIndex (p=>p.id ===id)
+static async updateProduct (id, aModificar = {}){
 
-        if (index === -1) {
-            return null; 
-        }
+    let prod = await this.get()
+    let indiceProd = prod.findIndex(p => p.id===id)
 
-        product[index] = {
-            ...product[index],
-            ...updateProduct,
-            id
-        };
-
-        await fs.promises.writeFile(productsFilePath, JSON.stringify(product, null, 2));
-
-        return product[index];
-    } catch (error) {
-        console.error('error de ID_actualizacion:', error.message); 
-        throw new Error('error de ID_actualizacion');
+    if(indiceProd===-1){
+        throw new error (`error: no existe id ${id}`)
     }
+
+    prod[indiceProd]={
+        ...prod[indiceProd],
+        ...aModificar,
+        id
+    }
+
+    await fs.promises.writeFile(this.path, JSON.stringify(prod, null, 5))
+    return prod[indiceProd]
+
+
+    // try {
+    //     const product = await this.get()
+    //     const index = product.findIndex (p=>p.id ===id)
+
+    //     if (index === -1) {
+    //         return null; 
+    //     }
+
+    //     product[index] = {
+    //         ...product[index],
+    //         ...updateProduct,
+    //         id
+    //     };
+
+    //     await fs.promises.writeFile(productsFilePath, JSON.stringify(product, null, 2));
+
+    //     return product[index];
+    // } catch (error) {
+    //     console.error('error de ID_actualizacion:', error.message); 
+    //     throw new Error('error de ID_actualizacion');
+    // }
 }
+
+
+// Eliminando prod
 
 static async deleteProduct(id) {
     const product = await this.get();
