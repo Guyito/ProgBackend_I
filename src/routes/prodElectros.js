@@ -85,19 +85,6 @@ router.put('/:id', async (req, res) => {
         const updateID = await electroManager.updateProduct(id, aModificar)
         res.setHeader('Content-Type','application/json');
         return res.status(200).json({updateID});
-        // const productId = req.params.id; 
-        // const updateID = req.body
-
-        // if(Object.keys(updateID).length===0){
-        //     return res.status(400).json({error: 'no se puede actualizar'})
-        // }
-
-        // const productUp = await electroManager.updateProduct(productId, updateID);
-
-        // if (!productUp){
-        //     return res.status(404).json({error: 'falla de id_upgrade'})
-        // }
-        // res.json(productUp)
     }
 
     catch (error){

@@ -43,8 +43,6 @@ static async create (prodElectros={}){  // Creando un nuevo producto
     return nuevoElectroProduct
 }
 
-
-
 // Upgrade de ID
 
 static async updateProduct (id, aModificar = {}){
@@ -64,31 +62,7 @@ static async updateProduct (id, aModificar = {}){
 
     await fs.promises.writeFile(this.path, JSON.stringify(prod, null, 5))
     return prod[indiceProd]
-
-
-    // try {
-    //     const product = await this.get()
-    //     const index = product.findIndex (p=>p.id ===id)
-
-    //     if (index === -1) {
-    //         return null; 
-    //     }
-
-    //     product[index] = {
-    //         ...product[index],
-    //         ...updateProduct,
-    //         id
-    //     };
-
-    //     await fs.promises.writeFile(productsFilePath, JSON.stringify(product, null, 2));
-
-    //     return product[index];
-    // } catch (error) {
-    //     console.error('error de ID_actualizacion:', error.message); 
-    //     throw new Error('error de ID_actualizacion');
-    // }
 }
-
 
 // Eliminando prod
 
