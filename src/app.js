@@ -28,6 +28,11 @@ res.setHeader('Content-Type', 'text/plain')
 res.status(200).send('OK')
 })
 
+// colocarlo el codigo de multer en alguna ruta
+app.post('/jugadores', (req,res) =>{
+
+})
+
 const Server=app.listen(PORT, ()=>{
     console.log(`Server en puerto ${PORT}`)
 })

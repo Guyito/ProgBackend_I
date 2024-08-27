@@ -1,34 +1,78 @@
+import { error } from "console"
 import fs from "fs"
-// const cartsFilePath = path.resolve('./src/data/dataCarts.json');
+import electroManager from "./electroManager"
+const cartsFilePath = path.resolve('./src/data/dataCarts.json')
 
 export class cartsManager{
 
-    static path
-
-    static async get(){
-        if(fs.existsSync(this.path)){
-            return JSON.parse(await fs.promises.readFile(this.path, {encoding: "utf-8"}))
+    static async getCarrito(){
+        if(fs.existsSync(cartsFilePath)){
+            return JSON.parse(await fs.promises.readFile(cartsFilePath, 'utf-8'))
 
         }else{
             return []
         }
     }
 
-    static async create (){
+    static async addCarrito(){
 
-        let carrito = await this.get()
-        let id=1
-
-        if(carrito.lenght>0){
-            id=Math.max(...carrito.map(d=>d.id))+1
+        let aCarrito = await this.getCarrito()
+        let newCarrito = {
+            id: ,
+            prod: [],
         }
-        carrito.push({
-            id,
-            producto:[]
-        })
 
-        await fs.promises.writeFile(this.path, JSON.stringify(carrito, null, 5))
-        return id
+        aCarrito.push(newCarrito)
+
+        await fs.promises.writeFile(cartsFilePath, JSON.stringify(aCarrito, null, 5))
+        return newCarrito
         
     }
+
+    static async getCarProd(cartId){
+        try {
+            const carts = await this.getCarrito()
+            const cart = carts.find(c => c.id === cartId)
+
+            if (!cart){
+                return null
+            }
+            return cart.prod
+        } 
+        catch (error){
+            console.error('error de prod en carrito:', error.message)
+            throw new error ('error de prod en carrito')
+        }
+    }
+
+    static async aggProdEnCart (cartId, productId){
+        const carts = await this.getCarrito()
+        const cart = carts.find(c => c.id === cartId)
+
+        if (!cart){
+            throw new error (`no existe el id ${cartId}`)
+        }
+
+        const prod = await electroManager.get()
+        const pro = prod.find(p => p.id === productId)
+
+        if (!pro){
+            throw new error (`producto id ${productId} no encontrado`)
+        }
+
+        const productIndex = cart.prod.findIndex(p =>p.pro === productId)
+
+        if(productIndex ===-1){
+            cart.prod.push({pro: productId, cantidad: 1})
+        } else{
+            cart.prod[productIndex].cantidad +=1
+        }
+
+        await fs.promises.writeFile(cartsFilePath, JSON.stringify(carts, null, 5))
+
+        return (cart.prod)
+
+    }
 }
+
+export default cartsManager
